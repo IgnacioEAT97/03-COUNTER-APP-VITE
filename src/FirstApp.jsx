@@ -13,7 +13,8 @@ export const FirstApp = ({title,subTitle,name}) => { //Props con desestructuraci
       <>{/* Esto es igual a un <Fragment>, fue añadido por react para no tener que importar cada vez el fragment */}
       {/* <code>{JSON.stringify(newMessage)}</code> */}
       {/* <h1>{Tarea()}</h1> */}
-      <h1>{title}</h1>
+      <div data-testid = "test-title"> {title} </div>
+      <p>{subTitle}</p>
       <p>{subTitle}</p>
       <p>{name}</p>
       </>
